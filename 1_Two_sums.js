@@ -13,6 +13,11 @@
 //     }
 //     return null;
 // }
+// Leetcode submission result
+// Runtime: 153 ms, faster than 30.71% of JavaScript online submissions for Two Sum.
+// Memory Usage: 42.5 MB, less than 68.31% of JavaScript online submissions for Two Sum.
+
+
 const two_sums = function(nums, target) {
     for(let p1 = 0; p1 < nums.length; p1++) {
       
@@ -27,6 +32,10 @@ const two_sums = function(nums, target) {
   
     return null;
   };
+  // Leetcode submission result
+  // Runtime: 139 ms, faster than 35.74% of JavaScript online submissions for Two Sum.
+// Memory Usage: 42.5 MB, less than 68.31% of JavaScript online submissions for Two Sum.
+
 let nums1 = [1, 3, 7, 9, 2], t1 = 11;
 let nums2 = [1, 3, 7, 9, 2], t2 = 25;
 let nums3 = [], t3 = 25;
