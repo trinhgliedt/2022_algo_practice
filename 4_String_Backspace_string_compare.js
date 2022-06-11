@@ -94,6 +94,8 @@ var backspaceCompare = function(s, t) {
     
     return true;
 }
+// Runtime: 77 ms, faster than 67.28% of JavaScript online submissions for Backspace String Compare.
+// Memory Usage: 41.9 MB, less than 95.71% of JavaScript online submissions for Backspace String Compare.
 
 let s1='ab#z', t1='az#z'; //true
 let s2='abc#d', t2='acc#c'; //false
