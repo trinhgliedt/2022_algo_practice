@@ -50,5 +50,8 @@ const minRemoveToMakeValid = function(str) {
 };
 
 console.log(minRemoveToMakeValid(string1))
+// time: O(n) (for the split method). For loop: O(n). While loop: O(n). Join method: O(n). Total : O(4n)
+// space: O(n) for res, O(n) for stack. Total O(2n)
+
 // Runtime: 121 ms, faster than 61.53% of JavaScript online submissions for Minimum Remove to Make Valid Parentheses.
 // Memory Usage: 48.8 MB, less than 77.98% of JavaScript online submissions for Minimum Remove to Make Valid Parentheses.
