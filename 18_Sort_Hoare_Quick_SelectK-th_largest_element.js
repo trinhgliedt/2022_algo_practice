@@ -16,6 +16,7 @@
 
 const array = [5,3,1,6,4,2];
 const kToFind = 4;
+// [1,2,3,4,5,6]
 
 const swap = function (array, i, j) {
   const temp = array[i];
@@ -39,18 +40,20 @@ const getPartition = function (nums, left, right) {
     //   partitionIdx is the postion where the item is placed correctly. Meaning all the items on the left of it is smaller than, and on the right are larger.
 };
 
-const quickSort = function (nums, left, right) {
+const quickSelect = function (nums, left, right, kToFind) {
   if(left < right) {
     const partitionIndex = getPartition(nums, left, right);
-
-    quickSort(nums, left, partitionIndex - 1);
-    quickSort(nums, partitionIndex + 1, right);
+    if ((partitionIndex + 1) < kToFind) {
+      quickSelect(nums, partitionIndex + 1, right);
+    } else if ((partitionIndex + 1) > kToFind) {
+      quickSelect(nums, left, partitionIndex - 1);
+    }
   }
 };
 
 var findKthLargest = function (nums, k) {
   const indexToFind = nums.length - k;
-  quickSort(nums, 0, nums.length - 1);
+  quickSelect(nums, 0, nums.length - 1, k);
   return nums[indexToFind]
 };
 
