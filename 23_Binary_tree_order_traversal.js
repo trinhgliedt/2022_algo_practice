@@ -99,3 +99,6 @@ class TreeNode {
   };
   
   console.log(levelOrder(tree))
+
+// Time: O(n)
+// Space: Max hold in memory is all the nodes at the lowest level. Which is n/2
