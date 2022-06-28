@@ -98,3 +98,5 @@ class TreeNode {
     
     return upperCount + left + 1;
   };
+// Time: O(h2 + h)
+// Space: O(1)
