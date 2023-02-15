@@ -45,7 +45,7 @@ var maxArea = function(height) {
     }
     return maxWater;
 };
-// if value at i is smaller than j, move the smaller pointer forward, cos we want to keep the larger value to compare with the new value of the other pointer
+// if value at i is smaller than j, move the smaller pointer forward, cos we want to keep the larger value to compare with the new value of the other pointer. Because if it’s the small edge of the 2, the only way for it to get bigger is to find a bigger edge
 // Runtime: 87 ms, faster than 76.08% of JavaScript online submissions for Container With Most Water.
 // Memory Usage: 48.9 MB, less than 97.37% of JavaScript online submissions for Container With Most Water.
 

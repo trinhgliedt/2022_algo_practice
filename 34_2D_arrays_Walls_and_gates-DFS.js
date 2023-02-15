@@ -41,7 +41,7 @@ const wallsAndGates = (rooms) => {
 };
 
 wallsAndGates(testMatrix)
-
-console.log(testMatrix);
+testMatrix.forEach((row)=>console.log(row));
+// console.log(testMatrix);
 // Time: O(n). 
 // Space: Our stack can be the entirely of the array. O(n)

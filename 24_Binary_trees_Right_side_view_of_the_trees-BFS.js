@@ -41,6 +41,7 @@ const rightSideViewBFS = function(root) {
   let queue = [root];
     
   while(queue.length) {
+    // initiate a count. At the beginning of the while loop, only parent nodes are in the queue. So the length of the queue is the number of nodes for that level. After checking the children for each node, increase count by 1. So, when count equals the initial length, that's when we're at the last node.
     let length = queue.length, count = 0, currentNode;
 
     while(count < length) {

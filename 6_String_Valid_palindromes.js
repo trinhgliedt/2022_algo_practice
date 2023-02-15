@@ -49,6 +49,12 @@ var isPalindrome2 = function(s) {
 // Runtime: 154 ms, faster than 9.55% of JavaScript online submissions for Valid Palindrome.
 // Memory Usage: 48.4 MB, less than 23.64% of JavaScript online submissions for Valid Palindrome.
 
+
+// /slashes: actual pattern we’re going to match
+// [] square brackets: group of characters we’re going to define so that it knows the string we’re looking for.
+// ^ tilda: capture everything not in the group that we defined
+// (/[^A-Za-z0-9]/: Take anything that is not alphanumeric
+
 var isPalindrome = function(s) {
     s = s.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
     if (s.length <=1) return true;

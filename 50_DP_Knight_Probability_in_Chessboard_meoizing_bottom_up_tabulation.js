@@ -61,7 +61,7 @@ var knightProbability = function(N, K, r, c) {
 
   dp[0][r][c] = 1;
   for (let step = 1; step <= K; step++) {
-    // iterate from left to right, top down, which is why we need to iterate through row and bol
+    // iterate from left to right, top down, which is why we need to iterate through row and col
     for (let row = 0; row < N; row++) {
       for (let col = 0; col < N; col++) {
         // need to figure out whether it's possible for the knight to reach this cell. 

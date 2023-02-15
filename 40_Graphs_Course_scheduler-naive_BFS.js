@@ -33,6 +33,7 @@ const canFinish = function(n, prerequisites) {
   // n is number of courses. Time: If each node connects to every other node except the node it came from, then this can go up to n time.
   for(let v = 0; v < n; v++) {
     const queue = [];
+    // seen: to store all the prerequisites for the current course
     const seen = {};
     // fill in our queue with initial values
     for(let i = 0; i < adjList[v].length; i++) {

@@ -13,8 +13,7 @@ const testMatrix = [
   ]
   
   const traversalDFS = function(matrix) {
-    const seen = 
-      new Array(matrix.length).fill(0).map(() => new Array(matrix[0].length).fill(false));
+    const seen = new Array(matrix.length).fill(0).map(() => new Array(matrix[0].length).fill(false));
     //   matrix.length).fill(0) is to build the outside array.
     // new Array(matrix[0].length).fill(false) is to build the inside array
     //   The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array.

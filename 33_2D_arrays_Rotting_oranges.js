@@ -69,7 +69,7 @@ const testMatrix = [
         }
   
         if (matrix[nextRow][nextCol] === FRESH) {
-          matrix[nextRow][nextCol] = 2;
+          matrix[nextRow][nextCol] = ROTTEN;
           freshOranges--;
           queue.push([nextRow, nextCol]);
         }
